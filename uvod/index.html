@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prvi HTML</title>
 </head>
+<!--style pro tablku aby měla border, collapse aby to bylo hezčí-->
+<style>
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;  
+    text-align: left;
+    
+}
+</style>
 <body>
     <!-- toto je komentar -->
     <p>
@@ -13,6 +22,7 @@
     <a href="https://www.google.com/" target="_blank">Toto je odkaz v jiném okně</a>
     <!-- ukáže se to v novém okně pomocí target -->
     <br>
+    
     <a href="https://www.google.com/">Toto je odkaz</a>
     <br>
     <a href="mailto:st025799@student.cichovabrno.cz">poslat email</a>
@@ -20,7 +30,7 @@
     <h6>Toto je 6 uroven</h6>
     <img src="https://th.bing.com/th/id/R.4a10cc5456ddb0170e461fc60b002a98?rik=E49HgzWnOvklZw&riu=http%3a%2f%2fbeddingnewsnow.com%2fwp-content%2fuploads%2f2024%2f06%2fphotos.png&ehk=Ko4PmfmN7jF%2baqhjYS9ihVYeD80x8yXuvld9vSOUIo8%3d&risl=&pid=ImgRaw&r=0" alt="" width="280" height="50%">
     
-
+    
     <h1>Textové elementy</h1>
     <!-- nepoužávají se děla se to v CSS-->
     <b>Tučné písmo</b>
@@ -42,19 +52,123 @@
 
 
      <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-<!-- Apple Touch Icons -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-<!-- Android -->
-<link rel="manifest" href="/site.webmanifest">
+    <!-- Android -->
+    <link rel="manifest" href="/site.webmanifest">
 
-<!-- Windows -->
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <!-- Windows -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    
+    <br>
+    
+    <!--zakladni tabulka pokud chci border musím ho dodělat nahoře ve stylu-->  
+    <table style="width: 100%;">
+        <tr>
+            <th>Škola</th>
+            <th>Jidlo</th>
+            <th>Penize</th>
+        </tr>
+        <tr>
+            <td>programovani</td>
+            <td>kebab</td>
+            <td>3506984545KČ</td>
+        </tr>
+        <tr>
+            <td>gulag</td>
+            <td>hranolky</td>
+            <td>454455454USD</td>
+        </tr>
+    </table>
+
+    <br>
+  
+    <p>
+        <!--jsou tam čísla-->
+        <h1>Ustpořádaný seznam</h1>
+        <ol>
+            <li>První položka</li>
+            <li>Druhá položka</li>
+            <li>Třetí položka</li>
+        </ol>
+        <br>
+        <!--nejsou tam čísla-->
+        <h1>Neuspořádaný seznam</h1>
+        <ul>
+            <li>První položka</li>
+            <li>Druhá položka</li>
+            <li>Třetí položka</li>
+        </ul>
+    </p>
+    <br>
+    <p>
+        <form action="/submit" method="post">
+            <label for="name">Jméno:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <input type="submit" value="Odeslat">
+        </form>
+        <br>
+
+        <form action="/submit" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <input type="submit" value="Odeslat">
+        </form>
+        <br>
+        <form action="/submit" method="post">
+            <button type="submit">Odeslat</button>
+        </form>
+        <br>
+        <form action="/submit" method="post">
+            <label for="subscribe">Přihlásit se k odběru novinek</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <br>
+            <input type="submit" value="Odeslat">
+        </form>
+        <br>
+        <form action="/submit" method="post">
+            <label for="gender">Pohlaví:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Muž</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Žena</label>
+            <br>
+            <input type="submit" value="Odeslat">
+        </form>
+        <br>
+        <form action="/submit" method="post">
+            <label for="color">Oblíbená barva:</label>
+            <select id="color" name="color">
+                <option value="red">Červená</option>
+                <option value="blue">Modrá</option>
+                <option value="green">Zelená</option>
+            </select>
+            <br>
+            <input type="submit" value="Odeslat">
+        </form>
+        <br>
+        <form action="/submit" method="post">
+            <label for="message">Zpráva:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <br>
+            <input type="submit" value="Odeslat">
+        </form>
+        
+        
+
+    </p>
+
+
+
+
 
 
 </body>
