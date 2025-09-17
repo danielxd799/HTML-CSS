@@ -87,85 +87,97 @@ table, th, td{
         </tr>
     </table>
 
+    <br>  
+    <!--jsou tam čísla-->
+    <h1>Ustpořádaný seznam</h1>
+    <ol>
+        <li>První položka</li>
+        <li>Druhá položka</li>
+        <li>Třetí položka</li>
+    </ol>
     <br>
-  
-    <p>
-        <!--jsou tam čísla-->
-        <h1>Ustpořádaný seznam</h1>
-        <ol>
-            <li>První položka</li>
-            <li>Druhá položka</li>
-            <li>Třetí položka</li>
-        </ol>
-        <br>
-        <!--nejsou tam čísla-->
-        <h1>Neuspořádaný seznam</h1>
-        <ul>
-            <li>První položka</li>
-            <li>Druhá položka</li>
-            <li>Třetí položka</li>
-        </ul>
-    </p>
+    <!--nejsou tam čísla-->
+    <h1>Neuspořádaný seznam</h1>
+    <ul>
+        <li>První položka</li>
+        <li>Druhá položka</li>
+        <li>Třetí položka</li>
+    </ul>
+
     <br>
-    <p>
-        <form action="/submit" method="post">
-            <label for="name">Jméno:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <input type="submit" value="Odeslat">
-        </form>
+    <!-- Formulář pro zadání jména -->
+    <h3>Formulář pro zadání jména</h3>
+    <form action="/submit" method="post">
+        <label for="name">Jméno:</label>
+        <input type="text" id="name" name="name" required>
         <br>
+        <input type="submit" value="Odeslat">
+    </form>
+    <br>
 
-        <form action="/submit" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <input type="submit" value="Odeslat">
-        </form>
+    <!-- Formulář pro zadání emailu -->
+        <h3>Formulář pro zadání emailu</h3>
+    <form action="/submit" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
         <br>
-        <form action="/submit" method="post">
-            <button type="submit">Odeslat</button>
-        </form>
-        <br>
-        <form action="/submit" method="post">
-            <label for="subscribe">Přihlásit se k odběru novinek</label>
-            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-            <br>
-            <input type="submit" value="Odeslat">
-        </form>
-        <br>
-        <form action="/submit" method="post">
-            <label for="gender">Pohlaví:</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Muž</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Žena</label>
-            <br>
-            <input type="submit" value="Odeslat">
-        </form>
-        <br>
-        <form action="/submit" method="post">
-            <label for="color">Oblíbená barva:</label>
-            <select id="color" name="color">
-                <option value="red">Červená</option>
-                <option value="blue">Modrá</option>
-                <option value="green">Zelená</option>
-            </select>
-            <br>
-            <input type="submit" value="Odeslat">
-        </form>
-        <br>
-        <form action="/submit" method="post">
-            <label for="message">Zpráva:</label>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-            <br>
-            <input type="submit" value="Odeslat">
-        </form>
-        
-        
+        <input type="submit" value="Odeslat">
+    </form>
+    <br>
 
-    </p>
+    <!-- Formulář pro tlačítko -->
+        <h3>Tlačítko</h3>
+    <form action="/submit" method="post">
+        <button type="submit">Tlačítko</button>
+    </form>
+    <br>
+    
+    <!-- Formulář pro přihlášení k odběru novinek (checkbox) -->
+    <h3>Formulář kde zaškrtneš nějakou možnost</h3>
+    <form action="/submit" method="post">
+        <label for="subscribe">Přihlásit se k odběru novinek</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <br>
+        <input type="submit" value="Odeslat">
+    </form>
+    <br>
 
+    <!-- Formulář pro výběr pohlaví (radio buttons) -->
+    <h3>Formulář kde má vybrat možnos checkbox</h3>
+    <form action="/submit" method="post">
+        <label for="gender">Pohlaví:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Muž</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Žena</label>
+        <br>
+        <input type="submit" value="Odeslat">
+    </form>
+    <br>
+
+    <!-- Formulář pro výběr oblíbené barvy (dropdown) -->
+        <h3>Formulář kde máš vybrat možnosti z "boxu"</h3>
+    <form action="/submit" method="post">
+        <label for="color">Oblíbená barva:</label>
+        <select id="color" name="color">
+            <option value="red">Červená</option>
+            <option value="blue">Modrá</option>
+            <option value="green">Zelená</option>
+        </select>
+        <br>
+        <input type="submit" value="Odeslat">
+    </form>
+    <br>
+
+    <!-- Formulář pro zadání zprávy (textarea) -->
+        <h3>Formulář kde máš políčko do kterého píšeš</h3>
+    <form action="/submit" method="post">
+        <label for="message">Zpráva:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        <br>
+        <input type="submit" value="Odeslat">
+    </form>
+    
 
 
 
