@@ -1,0 +1,29 @@
+body {
+    background-color: gray;
+    
+}
+
+h1{
+    color: white;
+}
+
+h3{
+    color: bisque;
+    
+}
+/*je to změna brarvy u h3, ale to je v class Tvojemama takže se změní vše v té classe*/
+.Tvojemama{
+    color: aqua;
+    text-align: center;
+}
+
+#nadrazeny.Tvojemama{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+button:hover{
+    background-color: blueviolet;
+    
+}
