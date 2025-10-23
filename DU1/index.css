@@ -1,0 +1,53 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.top ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.top li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.top a[href="#home"]{
+    color: #F5C014;
+}
+
+header{
+    background-image: url(images/pexels-photo-9392381.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1080px;
+    padding: 50px;
+}
+
+.top input{
+    background-color: transparent;
+    height: 30px;
+    width: 100px;
+    border:1px solid #aaa ;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5%;
+    padding-left: 10px;
+}
+
+header .midle{
+    color: #F5C014;
+    font-size: 40px;
+    
+
+}
