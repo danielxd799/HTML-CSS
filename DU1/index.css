@@ -17,10 +17,7 @@
     text-decoration: none;
     font-weight: bold;
     color: black;
-}
-
-.top a[href="#home"]{
-    color: #F5C014;
+    font-size: 18px;
 }
 
 header{
@@ -41,13 +38,59 @@ header{
     outline: none;
     font-size: 14px;
     color: white;
-    margin-bottom: 5%;
+   
     padding-left: 10px;
 }
 
 header .midle{
     color: #F5C014;
     font-size: 40px;
+    margin-top: 200px;
+
+}
+
+header .box{
+    margin-top: 150px;
+
+    width: 450px;
+    height: 300px;
+    background-color: rgba(54, 62, 77, 0.6)
+}
+
+
+.box h3{
+    margin-left: 20px;
+    color: white;
+}
+
+header p{
+    color: #aaa;
+}
+
+.box button{
+    width: 120px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    color: white;
+    padding: 15px 32px;
+    cursor: pointer;
+    transition-duration: 0.4;
+    border: 2px solid #F5C014 ;
+    background-color: transparent;
     
+
+}
+
+
+.box button:hover{
+    background-color: #cea82e;
+}
+
+.box img{
+    transform: scaleX(-1);
+    color: #F5C014; /*opravit není to ta barva*/
+
+
 
 }
