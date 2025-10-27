@@ -76,7 +76,7 @@ header .midle{
 }
 .box-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 2rem;
     margin-top: 12rem;
 
@@ -139,11 +139,98 @@ header .midle{
     background-color: #F7AC19;
 }
 
-.box-container img{
+.boxtop img{
     transform: scaleX(-1);
+}
+.box-container img{
+
     width: 20%;
     height: 100%;
     filter: brightness(0) saturate(100%) invert(66%) sepia(77%) saturate(649%) hue-rotate(359deg) brightness(103%) contrast(103%);
     
 
+}
+
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    
+    
+}
+
+.leftimg {
+    position: relative;
+}
+.leftimg img{
+    display: block;
+    height: auto;
+}
+
+.leftimg .overlay{
+    position: absolute;
+    bottom: 120px;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.leftimg h3{
+    margin-bottom: 1rem;
+    font-size: 40px;
+}
+.leftimg p{
+    font-size: 25px;
+    margin-bottom: 1,5rem;
+}
+
+.leftimg #sign{
+    margin-left: 12rem;
+    width: 55%;
+}
+
+.righttext {
+    margin-left: 10rem;
+    margin-top: 5rem;   
+}
+.righttext p{
+    color: black;
+    font-size: 20px;
+}
+.righttext hr{
+    background-color: #F7AC19;
+    height: 10px;
+    width: 70px;
+    border: none;
+    margin: 0% auto;
+    
+}
+
+
+.text .graybox{
+    margin-top: 31rem;
+    height: 200px;
+    width: 900px;
+    background-color: #F2F2F2;
+    padding: 30px;
+}
+
+.graybox button{
+    width: 120px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    color: black;
+    background-color: #F7AC19;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.text button:hover{
+    background-color: #966400;
 }
