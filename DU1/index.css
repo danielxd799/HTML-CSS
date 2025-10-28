@@ -234,3 +234,41 @@ header .midle{
 .text button:hover{
     background-color: #966400;
 }
+
+
+.gtop{
+    margin-top: 5rem;
+    background-color: #F2F2F2;
+    padding: 100px 0; 
+
+}
+
+
+
+.toptext p{
+    color: black;
+    font-size: 25px;
+
+}
+
+.gtop img{
+    width: 15%;
+   
+}
+
+.gtop #underimg{
+    color: black;
+    margin-top: 2rem;
+    font-size: 15px;
+}
+
+.checklist{
+    list-style: none;
+}
+
+
+.checklist li::before{
+    content: "\2713";
+    color: #F7AC19;
+    margin-right: 0.5rem;
+}
