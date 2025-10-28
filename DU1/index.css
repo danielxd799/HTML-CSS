@@ -236,14 +236,25 @@ header .midle{
 }
 
 
-.gtop{
+.grayarea{
     margin-top: 5rem;
     background-color: #F2F2F2;
-    padding: 100px 0; 
+    padding: 100px 150px; 
+
 
 }
 
+.gtop{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
 
+.toptext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .toptext p{
     color: black;
@@ -251,12 +262,18 @@ header .midle{
 
 }
 
-.gtop img{
+#imgright{
+    width: 22%;
+}
+
+
+
+.gmid img{
     width: 15%;
    
 }
 
-.gtop #underimg{
+#underimg{
     color: black;
     margin-top: 2rem;
     font-size: 15px;
@@ -272,3 +289,52 @@ header .midle{
     color: #F7AC19;
     margin-right: 0.5rem;
 }
+
+.gmid{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.midtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10rem;
+}
+
+.gbottom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+.center-text{
+    text-align: center;
+    
+}
+.center-text h1{
+    font-size: 80px;
+}
+.center-text p{
+    color: black;
+    font-size: 15px;    
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card1{
+    color: white;
+    background-color: #F7AC19;
+    padding: 30px ;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    
+}
+/*dodělat ty kartičky*/
