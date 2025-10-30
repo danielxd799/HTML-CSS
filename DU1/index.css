@@ -166,7 +166,7 @@ header .midle{
     margin-bottom: 1,5rem;
 }
 
-.leftimg #sign{
+    #sign{
     margin-left: 12rem;
     width: 55%;
 }
@@ -377,15 +377,19 @@ header .midle{
     color: #F7AC19;
 
 }
+
 .toplist{
     display: flex;
     justify-content: center;
+    margin-top: 5rem;
 }
 
 .toplist ul{
     display: flex;
     list-style-type: none;
     gap: 5rem;
+    padding: 0;
+    margin: 0;
 }
 
 .toplist li a{
@@ -393,6 +397,183 @@ header .midle{
     font-weight: bold;
     color: black;
     font-size: 50px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition-duration: 0.4;
 }
 
-/*naformátovat celou sekci */
+.toplist a:hover{
+    background-color: #F7AC19;
+    color: white;
+}
+
+.under{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem 8rem;
+}
+
+.dtextright{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.dimgleft{
+    display: flex;
+    align-items: flex-start;    
+}
+
+.dimgleft img{
+    display: flex;
+    align-items: flex-start;
+    width: 350px;
+}
+
+.dtextright h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dtextright p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.textrlist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.textrlist li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.textrlist li::before {
+    content: "•";
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.rtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+.rtext h1{
+    font-size: 50px;
+}
+.rtext p{
+    color: black;
+
+}   
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.T1-top h1 {
+    font-size: 50px;
+}
+
+.T2-top h1{
+    font-size: 50px;
+    color: white;
+}
+
+.T1-top{
+    height: 150px;
+    width: 200px;
+    background-color: #FCDDA1;
+    padding: 10px 30px;
+     
+}
+
+.T1-mid{
+    background-color: #FEF6EF;
+    padding: 10px;
+    height: 300px;
+}
+
+#mg, #mg2{
+    margin-top: 30px;
+}
+
+.T1-mid p{
+    color: black;
+    margin-bottom: 30px;
+}
+.T1-mid button{
+    background-color: #FCDDA1;
+    border: none;
+    height: 45px;
+    width: 150px;
+    padding: 10px 30px;
+    transition-duration: 0,4;
+    
+}
+
+.T1-mid button:hover{
+    background-color: #F7AC19;
+    color: white;
+    cursor: pointer;
+}
+
+.T2-top{
+    height: 150px;
+    width: 200px;
+    background-color: #F7AC19;
+    padding: 10px 30px;
+}
+
+.T2-mid{
+    background-color: white;
+    padding: 10px;
+    height: 300px;
+}
+
+.T2-mid p{
+    color: black;
+    margin-bottom: 30px;
+}
+
+.T2-mid button{
+    background-color: #F7AC19;
+    border: none;
+    height: 45px;
+    width: 150px;
+    padding: 10px 30px;
+    transition-duration: 0,4;
+    color: white;
+    
+}
+
+.T2-mid button:hover{
+    background-color: #9a6b0f;
+    cursor: pointer;
+}
+
+.T3 img{
+    width: 463px;
+    height: 500px;
+}
+
+.company img{
+    
+}
