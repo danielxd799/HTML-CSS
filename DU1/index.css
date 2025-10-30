@@ -573,7 +573,137 @@ header .midle{
     width: 463px;
     height: 500px;
 }
+.company{
+    background-image: url(images/pexels-photo-5990678.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom; 
+    min-height: 50vh;
+}
+.company-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
 
-.company img{
+
+.C-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.C-container h3{
+    color: black;
+}
+
+.C1, .C2, .C3, .C4{
+    background-color: white;
+    text-align: center;
+    width: 220px;
+    height: 250px;
+    padding: 30px;
+}
+.C1 img, .C4 img{
+    width: 60%;
+    clip-path: circle(45%);
     
+}
+.C2 img, .C3 img{
+    width: 110%;
+    clip-path: circle(34.5%);
+}
+
+.company-text button{
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    color: white;
+    padding: 15px 32px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.customers{
+    background-color: #F2F2F2;
+}
+
+.say{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.say h1{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.opinion-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.opinion1, .opinion2{
+    background-color: white;
+    border-radius: 15px;
+    width: 400px;
+    padding: 2rem;
+    text-align: left;
+}
+
+.opinion1 p, .opinion2 p{
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.CEO, .financial{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.CEO img, .financial img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ceotext h1, .ftext h1{
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.ceotext p, .ftext p{
+    margin: 0;
+    color: gray;
+}
+
+.cb{
+    display: flex;
+    justify-content: center;
+}
+.cb button{
+    background-color: #F7AC19;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.cb button:hover{
+    background-color: #d49311;
 }
