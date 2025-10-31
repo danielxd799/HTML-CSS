@@ -2,22 +2,20 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-
+/*horní řást*/
 .top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
-
+/*list vedle vyhledávání*/
 .top ul{
     list-style-type: none;
     display: flex;
     gap: 1rem;
     
 }
-
+/*list vedle vyhledávání*/
 .top li a {
     text-decoration: none;
     font-weight: bold;
@@ -29,7 +27,7 @@ body {
     color: #F7AC19;
 
 }
-
+/*pozadí*/
 header{
     background-image: url(images/pexels-photo-9392381.jpeg);
     background-repeat: no-repeat;
@@ -39,13 +37,14 @@ header{
     padding: 50px;
 
 }
-
+/*vyhledávání*/
 .search{
     display: flex;
     align-items: center;
     border: 1px solid #aaa;
     overflow: hidden;
 }
+/*vyhledávání ikona*/
 .search img{
     filter: invert();
     border-left:none;
@@ -57,6 +56,7 @@ header{
     cursor: pointer;
 
 }
+/*vyhledávací bar*/
 .top input{
     background-color: transparent;
     height: 30px;
@@ -68,20 +68,22 @@ header{
     color: white;
     padding-left: 10px;
 }
-
-header .midle{
+/*text pod vyhledáváním*/
+.midle{
     color: #F5C014;
     font-size: 40px;
     margin-top: 200px;
 
 }
+/*boxy*/
 .box-container{
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 12rem;
+    margin-top: 5rem;
 
 }
+/*formátování boxů*/
 .box1, .box2, .box3{
     width: 450px;
     height: 300px;
@@ -102,7 +104,7 @@ header .midle{
 .box-container h3, p{
     color: white;
 }
-
+/*tlačítko v boxech*/
 .box-container button{
     width: 120px;
     height: 50px;
@@ -123,15 +125,15 @@ header .midle{
 }
 
 .boxtop img{
-    transform: scaleX(-1);
+    transform: scaleX(-1); /*prohození obrázku*/
 }
+/*formátování ikon*/
 .box-container img{
-
     width: 20%;
     height: 100%;
     filter: brightness(0) saturate(100%) invert(66%) sepia(77%) saturate(649%) hue-rotate(359deg) brightness(103%) contrast(103%);
 }
-
+/*nate hudson*/
 .text{
     display: flex;
     justify-content: center;
@@ -144,12 +146,13 @@ header .midle{
 .leftimg {
     position: relative;
 }
+
 .leftimg img{
     display: block;
     height: auto;
 }
-
-.leftimg .overlay{
+/*text na obrázku   */
+.overlay{
     position: absolute;
     bottom: 120px;
     left: 0%;
@@ -162,24 +165,27 @@ header .midle{
     margin-bottom: 1rem;
     font-size: 40px;
 }
+
 .leftimg p{
     font-size: 25px;
     margin-bottom: 1,5rem;
 }
-
-    #sign{
+/*podpis na obrázku*/
+#sign{
     margin-left: 12rem;
     width: 55%;
 }
-
+/*text na obrázku*/
 .righttext {
     margin-left: 10rem;
     margin-top: 5rem;   
 }
+
 .righttext p{
     color: black;
     font-size: 20px;
 }
+
 .righttext hr{
     background-color: #F7AC19;
     height: 10px;
@@ -188,11 +194,10 @@ header .midle{
     margin: 0% auto;
     
 }
-
-
-.text .graybox{
-    margin-top: 31rem;
-    height: 200px;
+/*šedý box*/
+.graybox{
+    margin-top: 25rem;
+    height: 250px;
     width: 900px;
     background-color: #F2F2F2;
     padding: 30px;
@@ -212,14 +217,13 @@ header .midle{
 .text button:hover{
     background-color: #966400;
 }
-
-
+/*šedá zóna*/
 .grayarea{
     margin-top: 5rem;
     background-color: #F2F2F2;
     padding: 100px 150px; 
 }
-
+/*horní část*/
 .gtop{
     display: flex;
     align-items: flex-start;
@@ -241,29 +245,26 @@ header .midle{
     width: 22%;
 }
 
-
-
 .gmid img{
     width: 15%;
 }
-
+/*text pod obrázkem*/
 #underimg{
     color: black;
     margin-top: 2rem;
     font-size: 15px;
 }
-
+/*list*/
 .checklist{
     list-style: none;
 }
-
 
 .checklist li::before{
     content: "\2713";
     color: #F7AC19;
     margin-right: 0.5rem;
 }
-
+/*text nad listem*/
 .gmid{
     display: flex;
     align-items: flex-start;
@@ -276,7 +277,7 @@ header .midle{
     justify-content: space-between;
     margin-right: 10rem;
 }
-
+/*boxy o dřevě*/
 .gbottom {
     display: flex;
     justify-content: center;
@@ -301,14 +302,13 @@ header .midle{
     line-height: 1.6;
 }
 
-
+/*boxy*/
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-gap: 30px;
     justify-content: center;
 }
-
 
 .card1, .card3, .card5 {
     color: white;
@@ -321,22 +321,22 @@ header .midle{
     justify-content: center;
 }
 
-
 .card5 {
     grid-column: 2;
     background-color: white;
     color: black;
 }
+
 .card5 p{
     color: black;
 }
-
 
 .card2 img, .card4 img, .card6 img {
     width: 400px;
     height: 400px;
     object-fit: cover;
 }
+/*počet*/
 .pickcount{
     position: relative;
     overflow: hidden;
@@ -361,15 +361,18 @@ header .midle{
     color: white;
     text-align: center;
 }
+/*ikony*/
 .spec img, .happyc img, .avards img, .cases img{
     width: 30%;
     height: 10%;
     margin-bottom: 5rem;
     filter: brightness(0) saturate(100%) invert(66%) sepia(77%) saturate(649%) hue-rotate(359deg) brightness(103%) contrast(103%);
 }
+/*posunutí textu pod orbázkem*/
 .cases img{
     margin-bottom: 10rem;
 }
+
 .spec h1, .happyc h1, .avards h1, .cases h1{
     font-size: 100px;
 }
@@ -378,7 +381,7 @@ header .midle{
     color: #F7AC19;
 
 }
-
+/*popis*/
 .toplist{
     display: flex;
     justify-content: center;
@@ -465,7 +468,7 @@ header .midle{
     left: 0;
     top: 0;
 }
-
+/*ceník*/
 .rtext{
     display: flex;
     flex-direction: column;
@@ -474,14 +477,16 @@ header .midle{
     text-align: center;
     margin-top: 10rem;
 }
+
 .rtext h1{
     font-size: 50px;
 }
+
 .rtext p{
     color: black;
 
 }   
-
+/*kartičky ceníku*/
 .table-container{
     display: flex;
     justify-content: center;
@@ -574,6 +579,7 @@ header .midle{
     width: 463px;
     height: 500px;
 }
+/*firma*/
 .company{
     background-image: url(images/pexels-photo-5990678.jpeg) ;
     background-repeat: no-repeat;
@@ -581,6 +587,7 @@ header .midle{
     background-position: center bottom; 
     min-height: 50vh;
 }
+
 .company-text{
     color: white;
     display: flex;
@@ -589,14 +596,14 @@ header .midle{
     align-items: center;
     margin-top: 5rem;
 }
-
-
+/*boxy-firma*/
 .C-container{
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
 }
+
 .C-container h3{
     color: black;
 }
@@ -629,7 +636,7 @@ header .midle{
     cursor: pointer;
     border: 2px solid white;
 }
-
+/*zákaznická recenze*/
 .customers{
     background-color: #F2F2F2;
 }
@@ -673,6 +680,7 @@ header .midle{
     align-items: center;
     gap: 1rem;
 }
+
 .CEO img, .financial img{
     width: 50px;
     height: 50px;
@@ -710,7 +718,7 @@ header .midle{
 .cb button:hover{
     background-color: #d49311;
 }
-
+/*kontakt*/
 .contact {
     position: relative;
     overflow: hidden;
